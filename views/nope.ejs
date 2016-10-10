@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <%- include('meta') %>
+        <%- include('css') %>
+        <title>OrderUP HookUP</title>
+    </head>
+
+    <body ng-app="foodHookup" >
+        <div ng-controller="MainCtrl" >
+            <div id="nope-container" class="container">
+                <div class="row" >
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <a href="/">
+                            <img alt="OrderUP HookUP" id="main-logo"  src="/img/orderuphookuplogo.png"/>
+                        </a>
+                    </div>
+                    <div id="about-title" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h1 class="hidden">OrderUp HookUp</h1>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h2 id="nope-head">Nope!</h2>
+                        <p id="nope-bod">
+                            Looks like that's not on the menu.
+                        </p>
+                        <a href="/">
+                            <button id="nope-button" class="btn btn-primary">Try Again?</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('js') %>
+    </body>
+</html>

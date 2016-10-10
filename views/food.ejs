@@ -1,0 +1,45 @@
+<%-/***************************************
+      Food page template
+    ***************************************/%>
+<html>
+    <head>
+        <%- include('meta') %>
+        <%- include('css') %>
+        <title>OrderUP HookUP</title>
+    </head>
+
+
+    <body ng-app="foodHookup" >
+
+        <script>
+         var yelp_data;
+         var google_response;
+         var search_data;
+
+         yelp_data        = <%-(data)%>;
+         search_data      = <%-(search_data)%>;
+        </script>
+
+        <div class="page {{page_class}} ng-view"></div>
+
+        <script type="text/ng-template" id="restaurant">
+            <%-/***************************************
+               Single restaurant view (mobile only)
+            ***************************************/%>
+            <%- include('nav')%>
+            <%- include('singleview')%>
+            <%- include('footer') %>
+        </script>
+
+        <script type="text/ng-template" id="food">
+            <%-/***************************************
+               List restaurant view (mobile and desktop)
+            ***************************************/%>
+            <%- include('nav')%>
+            <%- include('listview')%>
+            <%- include('footer') %>
+        </script>
+
+        <%- include('js') %>
+    </body>
+</html>

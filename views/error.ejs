@@ -1,0 +1,43 @@
+<%-/***************************************
+      Generic Error page
+    ***************************************/%>
+<html>
+    <head>
+        <%- include('meta') %>
+        <%- include('css') %>
+        <title>OrderUP HookUP</title>
+    </head>
+
+    <body ng-app="foodHookup" >
+        <div ng-controller="MainCtrl" >
+            <div id="gross-container" class="container-fluid">
+                <div id="gross-overlay">
+                    <div class="row"  >
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <a href="/">
+                                <!-- <img alt="OrderUP HookUP" id="brussel-pic"  src="/img/brussel.jpg"/> -->
+                            </a>
+                        </div>
+                        <div id="about-title" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h1 class="hidden">OrderUp HookUp</h1>
+                        </div>
+                        <div id="error-info-container" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2 class="white-text" id="nope-head">Gross!</h2>
+                            <p class="white-text" id="nope-bod">
+                                Something went terribly, horribly wrong.
+                            </p>
+                            <p class="white-text" class="subtext">
+                                Sorry about that...
+                            </p>
+
+                            <a href="/">
+                                <button id="nope-button" class="btn btn-primary">Try Again?</button>
+                            </a>
+                        </div>
+                    </div> <!--  end row -->
+                </div> <!-- end overlay -->
+            </div><!-- end gross-container -->
+        </div><!-- end MainCtrl -->
+        <%- include('js') %>
+    </body>
+</html>

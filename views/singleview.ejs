@@ -1,0 +1,72 @@
+<%-/***************************************
+      Single restaurant view (mobile only)
+    ***************************************/%>
+<div id="food-card" class="container-fluid">
+    <div class="row" >
+        <div id="food-card-image-container" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <a href="food">
+                <img id="food-card-image"
+                     class="img-responsive {{current_restaurant.image_class}}"
+                     alt="company image"
+                     src="{{current_restaurant.image}}"/>
+            </a>
+        </div>
+    </div>
+    <div  class="row">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <h1  style="{{current_restaurant.title_size}}" class="restaurant-name">{{current_restaurant.name}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <p class="category">
+                {{current_restaurant.categories[0].title}}
+            </p>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <p class="distance" >
+                <!-- {{current_restaurant.distance}} mi -->
+            </p>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p ng-bind-html="star_rating" class="center-container">
+            </p>
+        </div>
+    </div>
+    <hr/>
+    <div class="row" style="{{current_restaurant.phone_style}}">
+        <div class="button-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <a id="phone-button-link" href="#first">
+                <button id="phone-button" ng-click="animate_button('phone-button')" class="btn info-button info-button-title clickable">
+                    <span class="button-glyph glyphicon glyphicon-earphone"></span>
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="row" style="{{current_restaurant.address_style}}">
+        <div class="button-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <a id="address-button-link" href="#first">
+                <button id="address-button" class="clickable btn info-button info-button-title"
+                        ng-click="animate_button('address-button')">
+                    <span class="button-glyph glyphicon glyphicon-map-marker"></span>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="button-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <a id="yelp-button-link" href="#first">
+                <button ng-click="animate_button('yelp-button')"
+                        class="btn info-button info-button-title clickable" id="yelp-button" >
+                    <span class="glyphicon button-glyph" >
+                        <img alt="" height="40" src="/img/yelplogonotext.png"/>
+                    </span>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>

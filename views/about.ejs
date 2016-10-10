@@ -1,0 +1,53 @@
+<%-/***************************************
+      About page
+    ***************************************/%>
+<html>
+    <head>
+        <%- include('meta') %>
+        <%- include('css') %>
+        <title>OrderUP HookUP</title>
+    </head>
+
+    <body ng-app="foodHookup" >
+        <div ng-controller="MainCtrl" >
+            <%- include('nav')%>
+            <div id="about-container" class="container">
+                <div class="row" >
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <a href="/">
+                            <img alt="OrderUP HookUP" id="main-logo"  src="/img/orderuphookuplogo.png"/>
+                        </a>
+                    </div>
+                    <div id="about-title" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h1 class="hidden">OrderUp HookUp</h1>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h2>Purpose</h2>
+                        <p>
+                            OrderUp HookUp is the answer to the question
+                            "What's for dinner?"
+                        </p>
+                        <p>
+                            Can't decide what you're in the mood for?
+                            Just put in your location and see what shows up!
+                        </p>
+                        <h2>Development</h2>
+                        <p>
+                            OrderUp HookUp was developed using Node, Express,
+                            and Angular, with data pulled from the Yelp API.
+                            <br/>
+                            To contact the developer, visit my website at
+                            <a href="http://www.smessina.com">smessina.com.</a>
+                        </p>
+                        <h2>Design</h2>
+                        <p>
+                            All site design was done by me, with some help from Twitter Bootstrap.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('footer')%>
+        <%- include('js') %>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<%-/***************************************
+      List restaurant view (mobile and desktop)
+    ***************************************/%>
+
+<div id="full-container">
+    <div ng-repeat="restaurant in restaurant_objects" id="restaurant-container" class="container">
+
+        <div class="row left-side-large-card">
+            <div class="deck-card-container col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                <div ng-click="view_restaurant(restaurant);"
+                     class="row ">
+                    <div class="clickable image-shadow-maker">
+                        <div class="food-image-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <img class="food-image img-responsive {{restaurant.image_class}}"
+                                 alt="company image"
+                                 src="{{restaurant.image}}"/>
+                        </div>
+                    </div>
+                </div> <!-- end image row -->
+                <div class="sub-picture-row">
+                    <div ng-click="view_restaurant(restaurant);"
+                         class="row" >
+                        <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                            <h1 style="{{restaurant.title_size}}"
+                                class="restaurant-name">
+                                {{restaurant.name}}
+                            </h1>
+                        </div>
+                    </div> <!-- end name row -->
+                    <div ng-click="view_restaurant(restaurant);" class="row">
+                        <div class="col-xs-8 hidden-sm hidden-md hidden-lg">
+                            <p class="category">
+                                {{restaurant.categories[0].title}}
+                            </p>
+                        </div>
+                        <div class="col-xs-4 hidden-sm hidden-md hidden-lg">
+                            <p class="distance" >
+                                <!-- {{restaurant.distance}} mi -->
+                            </p>
+                        </div>
+                    </div> <!-- end category row -->
+
+                    <div class="row" >
+                        <a href="{{restaurant.yelp_url}}">
+                            <div class="large-star-container hidden-xs col-sm-12 col-md-12 col-lg-12">
+                                <div ng-bind-html="restaurant.star_rating" >
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- end star rating row -->
+                </div> <!-- end sub-picture-row -->
+            </div> <!-- end deck-card-container -->
+
+            <div class="hidden-xs col-sm-6 col-md-6 col-lg-6 large-card-back-container">
+                <div class="large-card-back-inner-container" >
+                    <div class="row" >
+                        <div class="large-star-container col-xs-12 hidden-sm hidden-md hidden-lg">
+                            <p ng-bind-html="restaurant.star_rating" >
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="large-card-name row" >
+                        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+                            <h1 style="{{restaurant.title_size}}"
+                                class="restaurant-name">{{restaurant.name}}</h1>
+                        </div>
+                    </div> <!-- end name row -->
+                    <div class="large-card-name row">
+                        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+                            <p class="category" class="restaurant-name">
+                                {{restaurant.categories[0].title}}
+                            </p>
+                        </div>
+                        <div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
+                            <p class="distance restaurant-name" >
+                                <!--  {{restaurant.distance}} mi-->
+                            </p>
+                        </div>
+                        <div class="row" style="{{restaurant.phone_style}}">
+                            <div class="button-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <button class="phone-button btn info-button info-button-title">
+                                    <span class="button-glyph large-screen-glyph glyphicon glyphicon-earphone"></span>
+                                    <p>
+                                        {{restaurant.phone}}
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row" style="{{restaurant.address_style}}">
+                            <div class="button-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <a href="http://maps.google.com/maps?q={{restaurant.address_as_url}}">
+                                    <button id="address-button{{restaurant.name}}"
+                                            class="clickable btn info-button info-button-title">
+                                        <span class="button-glyph large-screen-glyph glyphicon glyphicon-map-marker"></span>
+                                        <p class="button-text" >
+                                            {{restaurant.address_1}}
+                                            <br/>
+                                            {{restaurant.address_2}}
+                                        </p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div> <!-- end large-back-inner-container -->
+                </div> <!-- end large-back-container -->
+            </div> <!-- end deck-card-container -->
+        </div> <!-- end row left side card -->
+    </div> <!-- end restaurant in restaurants -->
+    <div id="more-button-container" class="container">
+        <div class="row"  id="more-button-row">
+            <div id="more-button-col" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <button id="more-button" ng-click="see_more();" class="clickable btn info-button info-button-title">
+                    See more?
+                </button>
+            </div>
+        </div> <!-- end more-button-row -->
+    </div> <!-- end more-button-container -->
+</div> <!-- end full container -->
