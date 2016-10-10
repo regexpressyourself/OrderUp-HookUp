@@ -1,6 +1,4 @@
-# OrderUp HookUp 
-<img src="http://smessina.com/img/orderuphookuplogo.png" alt="Drawing" style="float:right;width: 100px;"/>
-
+![OrderUp HookUp Logo](http://smessina.com/img/orderuphookuplogosmall.png)
 
 OrderUp HookUp is the answer to the question "What's for dinner?"
 
