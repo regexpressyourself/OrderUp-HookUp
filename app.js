@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express      = require('express');
 var path         = require('path');
 var favicon      = require('serve-favicon');
@@ -7,7 +8,7 @@ var bodyParser   = require('body-parser');
 var request      = require('request');
 var routes       = require('./routes/index');
 
-var accessToken = 'SECRET';
+var accessToken = process.env.YELPTOKEN;
 
 var app = express();
 
