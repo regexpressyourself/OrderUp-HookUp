@@ -75,7 +75,6 @@ var search_yelp = function(search_terms, location, radius, offset, res) {
                 yelp_data = temp_data;
             }
             if (search_data.offset == 0) {
-                console.log("no off");
                 res.redirect("/food");
             }
             else {
@@ -120,7 +119,6 @@ var get_location_data = function(yelp_data, res) {
             }
             if (i >= (json_google_data.length - 1)) {
                 if (search_data.offset == 0) {
-                    console.log("no off");
                     res.redirect("/food");
                 }
                 else {
