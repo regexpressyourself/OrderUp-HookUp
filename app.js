@@ -46,9 +46,9 @@ var search_yelp = function(search_terms, location, radius, offset, res) {
     if( typeof radius !== 'undefined') {
         terms.radius = radius;
     }
-    terms.offset = offset;
+    terms.offset = parseInt(offset);
     terms.sort_by = "distance";
-    terms.open_now_filter = true;
+    terms.open_now = true;
     terms.limit = 20;
     request({
         url: 'https://api.yelp.com/v3/businesses/search',
@@ -182,6 +182,7 @@ app.get('/yelp', function(req, res){
     if (typeof radius === 'undefined') {
         radius = 20;
     }
+    radius = radius * 1600; // convert to meters
     if (query_location == "") {
         query_location = JSON.parse(JSON.stringify(req.query.o_location));
     }
