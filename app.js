@@ -177,12 +177,7 @@ app.get('/yelp', function(req, res){
 
     var terms      = req.query.terms;
     var location   = req.query.location.replace("%2C", ",").replace("+", " ");
-    var radius     = req.query.radius;
     var offset     = req.query.offset;
-    if (typeof radius === 'undefined') {
-        radius = 20;
-    }
-    radius = radius * 1600; // convert to meters
     if (query_location == "") {
         query_location = JSON.parse(JSON.stringify(req.query.o_location));
     }
@@ -190,6 +185,7 @@ app.get('/yelp', function(req, res){
     if (typeof offset === 'undefined') {
         offset = 0;
     }
+    radius = 20*1600; // 20 miles * 1600 m/mi
 
     if (query_location == '' ) {
         res.render("where", {wrong_loc: location});
@@ -202,7 +198,6 @@ app.get('/yelp', function(req, res){
 
     console.log("Terms: "    + terms    + "\n");
     console.log("Location: " + location + "\n");
-    console.log("Radius: "   + radius   + "\n");
     console.log("offset: "   + offset   + "\n");
 
     if (query_location   != ''  ){
