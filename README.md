@@ -1,5 +1,5 @@
-![OrderUp HookUp Logo](http://smessina.com/img/orderuphookuplogosmall.png)
-# OrderUp HookUp
+<img alt="OderUp HookUp" src="https://regexpressyourself.github.io/public/ohlogo.png" width="400px"/>
+
 
 OrderUp HookUp is the answer to the question "What's for dinner?"
 
@@ -14,5 +14,6 @@ The backend is running Node.js with Express. The front end is running Angular 1.
 Twitter Bootstrap and regular HTML, CSS, and Javascript are all used for design. All logo design was done on Adobe Illustrator and Photoshop.
 
 ## Note
+
 In order to protect sensitive data, I created this repository to provide a public-facing version of the codebase. While all the functionality is the same, access tokens, passwords, etc. have been removed. As a result, the commit history from development is not reflected here.
 
