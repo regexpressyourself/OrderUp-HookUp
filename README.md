@@ -1,4 +1,4 @@
-<img alt="OderUp HookUp" align="right" src="https://regexpressyourself.github.io/public/ohlogo.png" width="400px"/>
+<img alt="OrderUp HookUp" align="right" src="https://regexpressyourself.github.io/public/ohlogo.png" width="400px"/>
 
 # OrderUp HookUp
 
@@ -6,7 +6,7 @@ OrderUp HookUp is the answer to the question "What's for dinner?"
 
 Can't decide what you're in the mood for? Just put in your location and see what shows up!
 
-[See it live here!](https://smessina.com/gitflow/#/)
+[See it live here!](http://www.orderuphookup.com/)
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ Can't decide what you're in the mood for? Just put in your location and see what
 
 ## Introduction
 
-OderUp HookUp is a stripped down front end for Yelp's API, with mobile-first design principles at the forefront. OrderUp HookUp is meant to be a general-purpose food finder, giving you a map, phone number, photo, and category for nearby restaurants. The simple, intuitive design makes it easy to quickly see what's nearby and decide on what to eat.
+OrderUp HookUp is a stripped down front end for Yelp's API, with mobile-first design principles at the forefront. OrderUp HookUp is meant to be a general-purpose food finder, giving you a map, phone number, photo, and category for nearby restaurants. The simple, intuitive design makes it easy to quickly see what's nearby and decide on what to eat.
 
 ## Getting Started
 
@@ -31,7 +31,7 @@ OrderUp HookUp uses Node and Express on the backed, and Angular on the front end
 
 To run OrderUp HookUp, you will need access to [Yelp's Fusion API](https://www.yelp.com/developers/documentation/v3). You can start that process [here](https://www.yelp.com/developers/documentation/v3/get_started).
 
-Once you have an id and a secret, you will need to generate a token. This is done with the following command (replacing YOUR_ID and YOUR_SECRET with your Yelp access id and secret, respectively):
+Once you have an id and a secret, you will need to generate a token. This is done with the following command (replacing `YOUR_ID` and `YOUR_SECRET` with your Yelp access id and secret, respectively):
 
 ``` 
 curl    -d grant_type=client_credentials  \
@@ -105,10 +105,10 @@ To deploy OrderUp HookUp, you simply need to run the `start` script declared in 
 
 ## Built With
 
-* [Angular v. 1]() - The web framework that powers the site
-* [Angular v. 1]() - The web framework that powers the site
-* [Angular v. 1]() - The web framework that powers the site
-* [Angular v. 1]() - The web framework that powers the site
+* [Angular v. 1](https://angularjs.org/) - The front end framework that powers the site
+* [Node](https://nodejs.org/en/) - The backend server
+* [Express](https://expressjs.com/) - Handles all routing in the server
+* [EJS](http://ejs.co/) - The templating language used to go from Angular data to HTML
 
 **[Back to top](#table-of-contents)**
 
@@ -126,7 +126,7 @@ I'm always happy to receive pull requests, questions/issues regarding code, and 
 
 ## License
 
-Git Flow is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+OrderUp HookUp is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 
 **[Back to top](#table-of-contents)**
