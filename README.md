@@ -28,29 +28,6 @@ OrderUp HookUp uses Node and Express on the backed, and Angular on the front end
 
 ### Prerequisites
 
-#### API Access
-
-To run OrderUp HookUp, you will need access to [Yelp's Fusion API](https://www.yelp.com/developers/documentation/v3). You can start that process [here](https://www.yelp.com/developers/documentation/v3/get_started).
-
-Once you have an id and a secret, you will need to generate a token. This is done with the following command (replacing `YOUR_ID` and `YOUR_SECRET` with your Yelp access id and secret, respectively):
-
-``` 
-curl    -d grant_type=client_credentials  \
-        -d client_id=YOUR_YELP_ID         \
-        -d client_secret=YOUR_YELP_SECRET \
-        'https://api.yelp.com/oauth2/token'
-```
-
-The access_token that is returned still needs to be made available to OrderUp HookUp, however. This is done using the [dotenv](https://www.npmjs.com/package/dotenv) library.
-
-The token should be declared in a file named `.env` located in the project root. The `.env` file should take the following form:
-
-```
-   YELPTOKEN=YOUR_ACCESS_TOKEN
-```
-
-With that completed, you are ready to build the app!
-
 
 #### Tech
 
@@ -79,6 +56,29 @@ Next, install the dependencies using NPM or Yarn.
 ```
    yarn install
 ```
+
+#### API Access
+
+To run OrderUp HookUp, you will need access to [Yelp's Fusion API](https://www.yelp.com/developers/documentation/v3). You can start that process [here](https://www.yelp.com/developers/documentation/v3/get_started).
+
+Once you have an id and a secret, you will need to generate a token. This is done with the following command (replacing `YOUR_ID` and `YOUR_SECRET` with your Yelp access id and secret, respectively):
+
+``` 
+curl    -d grant_type=client_credentials  \
+        -d client_id=YOUR_YELP_ID         \
+        -d client_secret=YOUR_YELP_SECRET \
+        'https://api.yelp.com/oauth2/token'
+```
+
+The access_token that is returned still needs to be made available to OrderUp HookUp, however. This is done using the [dotenv](https://www.npmjs.com/package/dotenv) library.
+
+The token should be declared in a file named `.env` located in the project root. The `.env` file should take the following form:
+
+```
+   YELPTOKEN=YOUR_ACCESS_TOKEN
+```
+
+With that completed, you are ready to build the app!
 
 
 **[Back to top](#table-of-contents)**
