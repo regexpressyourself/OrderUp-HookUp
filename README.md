@@ -57,7 +57,7 @@ Next, install the dependencies using NPM or Yarn.
    yarn install
 ```
 
-#### API Access
+### API Access
 
 To run OrderUp HookUp, you will need access to [Yelp's Fusion API](https://www.yelp.com/developers/documentation/v3). You can start that process [here](https://www.yelp.com/developers/documentation/v3/get_started).
 
