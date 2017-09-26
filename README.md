@@ -11,6 +11,7 @@ Can't decide what you're in the mood for? Just put in your location and see what
 ## Table of Contents
 
 1. [Getting Started](#getting-started)
+3. [Deployment](#deployment)
 2. [Built With](#built-with)
 3. [Contributing](#contributing)
 3. [Authors](#authors)
