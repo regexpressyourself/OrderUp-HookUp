@@ -33,56 +33,49 @@
                         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
 
-        <div ng-controller="MainCtrl" >
+    <div ng-controller="MainCtrl" >
 
-            <div id="index-container">
-                
-                <div class="page-header">
-                    <h1 class="hidden" id="site-title">OrderUP HookUP</h1>
-                    <img alt="OrderUP HookUP" id="main-logo"  src="/img/orderuphookuplogo.png"/>
-                </div>
+      <div id="index-container">
 
-                <form id="initial-form" method="get" action="/yelp">
-                    <h2 class="center-container" >Let's find you some food</h2>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="form-group">
-                            <input type="text"
-                                   class="form-control"
-                                   placeholder="What do you want?"
-                                   name="terms"
-                                   ng-model="terms"
-                                   autofocus="autofocus"></input>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="form-group">
-                            <input type="text"
-                                   class="form-control"
-                                   placeholder="Where are you?"
-                                   autocomplete="off"
-                                   g-places-autocomplete
-                                   force-selection= "true";
-                                   name="location"
-                                   ng-model="location"></input>
-                            <input type="hidden"
-                                   name="o_location"
-                                   ng-model="o_location"
-                                   value="{{location.geometry.location}}"></input>
-                        </div>
-                    </div>
-                    <input type="hidden"
-                           name="offset"
-                           ng-model="offset"
-                           value="0"></input>
+        <div class="page-header">
+          <h1 class="hidden" id="site-title">OrderUP HookUP</h1>
+          <img alt="OrderUP HookUP" id="main-logo"  src="/img/orderuphookuplogo.png"/>
+        </div>
 
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="center-container ">
-                            <button id="main-form-submit" type="submit" class="btn btn-primary">Find some food!</button>
-                        </div>
-                    </div>
-                </form>
-            </div> <!-- end full container -->
+    <form id="initial-form" method="get" action="/yelp">
+      <h2 class="center-container" >Let's find you some food</h2>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="form-group">
+          <input type="text"
+                 class="form-control"
+                 placeholder="What do you want?"
+                 name="terms"
+                 ng-model="terms"
+                 autofocus="autofocus"></input>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="form-group">
+          <input type="text"
+                 class="form-control"
+                 placeholder="Where are you?"
+                 autocomplete="off"
+                 g-places-autocomplete
+                 force-selection= "true";
+                 name="location"
+                 ng-model="location"></input>
+          <input type="hidden"
+                 name="o_location"
+                 ng-model="o_location"
+                 value="{{location.geometry.location}}"></input>
+        </div>
+      </div>
+      <input type="hidden"
+             name="offset"
+             ng-model="offset"
+             value="0"></input>
 
+<<<<<<< HEAD
         </div> <!-- end main controller div -->
         <%- include('footer')%>
         <%- include('js') %>
@@ -111,4 +104,18 @@
           }
          </script>
     </body>
+=======
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="center-container ">
+          <button id="main-form-submit" type="submit" class="btn btn-primary">Find some food!</button>
+        </div>
+      </div>
+    </form>
+      </div> <!-- end full container -->
+
+    </div> <!-- end main controller div -->
+    <%- include('footer')%>
+    <%- include('js') %>
+  </body>
+>>>>>>> 82175eac7302faf76bbcb2c0d54dff94f6ac5660
 </html>
