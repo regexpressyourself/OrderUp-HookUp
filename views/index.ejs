@@ -2,10 +2,36 @@
     <head>
         <%- include('meta') %>
         <%- include('css') %>
-        <title>OrderUP HookUP</title>
+        <title>orderUp hookUp | Find the closest, best food near me | Sam & A Van</title>
+        <meta name="description" content="With orderUp hookUp, you can find food near you. Optimized for mobile and phone, orderUp hookUp helps you find your next meal while on the train, on vacation, or on the go. ">
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="orderUp hookUp | Find the closest, best food near me | Sam & A Van" />
+        <meta name="twitter:url" content="https://orderuphookup.samandavan.com/" />
+        <meta name="twitter:description" content="With orderUp hookUp, you can find food near you. Optimized for mobile and phone, orderUp hookUp helps you find your next meal while on the train, on vacation, or on the go. " />
+        <meta name="twitter:image" content="https://orderuphookup.samandavan.com/img/orderuphookuplogo.png" /> 
+
+
+        <meta property="og:title" content="orderUp hookUp | Find the closest, best food near me | Sam & A Van" />
+        <meta property="og:url" content="https://orderuphookup.samandavan.com/" />
+        <meta property="og:description" content="With orderUp hookUp, you can find food near you. Optimized for mobile and phone, orderUp hookUp helps you find your next meal while on the train, on vacation, or on the go. " />
+        <meta property="og:image" content="https://orderuphookup.samandavan.com/img/orderuphookuplogo.png" />
+        <meta property="og:type" content="article" /> 
+
+        <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5FVHD3W');</script>
+  <!-- End Google Tag Manager -->
     </head>
 
     <body ng-app="foodHookup" >
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FVHD3W"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
 
         <div ng-controller="MainCtrl" >
 
@@ -60,5 +86,29 @@
         </div> <!-- end main controller div -->
         <%- include('footer')%>
         <%- include('js') %>
+
+
+
+         <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "WebApplication",
+            "name": "orderUp hookUp",
+            "url": "https://orderuphookup.samandavan.com/",
+            "description": "With orderUp hookUp, you can find food near you. Optimized for mobile and phone, orderUp hookUp helps you find your next meal while on the train, on vacation, or on the go. ",
+            "applicationCategory": "Tools",
+            "genre": "food",
+            "about": {
+              "@type": "Thing",
+              "description": "With orderUp hookUp, you can find food near you. Optimized for mobile and phone, orderUp hookUp helps you find your next meal while on the train, on vacation, or on the go. "
+            },
+            "browserRequirements": "Requires JavaScript. Requires HTML5.",
+            "softwareHelp": {
+              "@type": "CreativeWork",
+              "url": "https://orderuphookup.samandavan.com/"
+            },
+            "operatingSystem": "All"
+          }
+         </script>
     </body>
 </html>
