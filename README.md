@@ -1,4 +1,4 @@
-<img alt="OrderUp HookUp" align="right" src="https://regexpressyourself.github.io/public/ohlogo.png" width="400px"/>
+<img alt="OrderUp HookUp" align="right" src="https://smessina.com/static/images/sss/oh-2.png" width="400px"/>
 
 # OrderUp HookUp
 
@@ -6,7 +6,7 @@ OrderUp HookUp is the answer to the question "What's for dinner?"
 
 Can't decide what you're in the mood for? Just put in your location and see what shows up!
 
-[See it live here!](http://www.orderuphookup.com/)
+[See it live here!](https://orderuphookup.smessina.com/)
 
 ## Table of Contents
 
